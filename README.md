@@ -109,3 +109,11 @@ git commit -m 'treść commit messaga'
 ```
 
 pomiędzy cudzysłowiami umieszczamy dowolne zdanie np określające co zostało zrobione w danym commicie
+
+po commicie pozostaje już tylko wypushowanie zmian do zdalnego repozytorium czyli poniższa komenda
+
+```
+git push origin master
+```
+
+I gotowe!
