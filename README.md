@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Przepis na aplikacje reactową
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Witam w dokumencie opisującym wszystkie kroki jakie trzeba wykonać w pracy domowej. Znajdziesz tu opis oraz linki do dodatkowych materiałów które pozwolą Ci
 
-## Available Scripts
+1. stworzyć repozytorium github
+2. zasetupować projekt reactowy
+3. opis głównego zadania wraz z designem
 
-In the project directory, you can run:
+# Zadanie
 
-### `npm start`
+Twoim zadaniem jest stworzenie mini-aplikacji typu "Profil użytkownika", która będzie wyświetlała
+podstawowe dane na temat użytkownika wraz z miejscem na zdjęcie profilowe (szare kółko). To jak aplikacja powinna wyglądać (kolory, rozmieszczenie elementów, kontent) jest przedstawione na designie dołączonym do zadania lub na obazku poniżej. 100% wykonane zadanie do kompletna implementacja/odzwierciedlenie designu wraz z umieszczeniem projektu na repozytorium GitHub.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Design](./design.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Desgin z proponowanym podziałem na komponenty
 
-### `npm test`
+![Design z podziałem na komponenty](./design_podzial_na_komponenty.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tworzenie nowego projektu w react
 
-### `npm run build`
+Żeby utworzyć nowy projekt w bibliotece react musimy użyć narzędzi które nam zasetapują wszystkie potrzebne początkowe pliki takie jak: podstawowe pliki js App.js, index.js, package.json, node_modules itd.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Narzędziem tym jest paczka **Create React App** (zachęcam do zapoznawania się z tą dokumentacją)
+link: https://create-react-app.dev/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A więc do dzieła:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. otwórz terminal w folderze w którym chcesz utworzyć projekt (może to być nawet pulpit)
+2. w terminalu wpisz komende (komenda poniżej) która zasetapuje projekt w react - zwróc uwagę na 3 część tej komendy (nazwa-twojej-aplikacji) jest to nazwa projektu jest ona dowolna możesz użyć jakiekolwiek nazwy bez białych znaków (spacji) - po wpisaniu komendy naciskamy enter - UWAGA proces ten możę trochę potrwać
 
-### `npm run eject`
+```
+npx create-react-app nazwa-twojej-aplikacji
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. po pomyślnym setupie na ekranie powinieneś/powinnaś widzieć sugestie do przejścia do projektu (tj poniżej)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+We suggest that you begin by typing:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+	cd nazwa-twojej-aplikacji
+	npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. wykonujemy proponowany krok czyli będąc w terminalu wpisujemy sugerowaną komende i naciskamy enter (UWAGA pamiętaj żeby wpisać nazwę projektu jakiej Ty użyłeś/użyłaś na początku)
 
-## Learn More
+```
+cd nazwa-twojej-aplikacji
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. po wykonaniu kroku 4 powinieneś/powinnaś znajdować się w folderze z projektem możesz uruchomić projekt w VSCode w dowolny znany Ci sposób lub pozostając w terminalu możesz wpisać następującą komende po czym nacisnać enter - komenda powinna uruchomić VSCode z nowowygenerowanym projektem
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+code .
+```
 
-### Code Splitting
+Otwarty VSCode powinnien wyglądać tak jak na obrazku poniżej
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![VSCode po wygenerowaniu projektu](./struktura_po_wygenerowaniu.png)
 
-### Analyzing the Bundle Size
+Mała przypominajka co czym jest w tym projekcie
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Struktura projektu - opis](./struktura_projektu_opis.png)
 
-### Making a Progressive Web App
+6. Uruchomienie nowowygenerowanego projektu - żeby uruchomić projekt należy w terminalu wpisać poniższą komendę po czym nacisnać enter (jest to jedna z 4 defaultowo dostępnych komend/skryptów dostępnych w naszym projekcie) - projekt powinien autoamtycznie się otworzyć w ostatnio aktywnym oknie przelgądarki na porcie localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+npm start
+```
 
-### Advanced Configuration
+Po powyższych przypomnieniach/wyjaśnieniach przchodzimy do **KODOWANKA**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Na designie dostępnym w pliku design_podzial_na_komponenty.png jest opis jakie pliki oraz komponenty
+należy stworzyć. Pliki z komponentami należy stworzyć w uprzednio stworzonym folderze o nazwie **components.**
 
-### Deployment
+Najbardziej zewnętrzny komponent (Profile) należy zaimportować do pliku App.js i tam go wywołać/użyć - dzięki temu rezultat będzie widoczny na ekranie.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+OK. Teraz czas na Ciebie i Twoją implementacje. Do dzieła!
 
-### `npm run build` fails to minify
+No dobrze jeszcze parę hintów ode mnie:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- nie działa projekt mimo ze jest uruchomiony? spróbuj coś zmienić w projekcie (dodaj spacje) i ponownie zapisać,
+  ponowne przeładowanie projektu czasem pomaga przebudować projekt i wyeliminować nieprawdziwe błędy
+- dalej nic? sprawdź dokładnie co na ten temat mówi terminal w VSCode czytanie błędów i errorów to bardzo ważna umiejętnośc - postaraj się rozszyforwać i rozwiązać błąd na własną ręke.
+- dalej nic? przekopiuj kawałek błedu i spróbuj znaleźć odpowiedź w googlu - wyszukiwanie informacje to chlep powszedni programisty
+- dalej nic? zadaj pytanie na naszej grupie reactowej może ktoś już miał podobny problem i udało się go rozwiązać - znowu muszę to powiedzieć że zadawanie pytań to też ważna umiejętność :D ps. też jestem na tej grupie - pomogę :)
+
+## Tworzenie repozytorium na Githubie i pushowanie projektu
+
+Proces tworzenia repozytorium na Github mam nadzieje że jest znany jeżeli ktoś potrzebuje przypomnienia to odsyłam do poniższych materiałów:
+
+- dokumentacje na githubie link prowdzi dokładnie do procesu tworzenia nowego repo https://docs.github.com/en/get-started/quickstart/create-a-repo
+- tutorial (własnej produkcji) na youtube przedstawiający proces tworzenia nowego repozytorium i łączenie go z aplikacją reactową https://www.youtube.com/watch?v=IzpLQqium3w
+
+Częścią zadania domowego jest umieszczenie projektu na Githubie - dlatego po zakodowaniu projektu przydatne mogą być ponizsze komendy do pracy z GITem
+
+Dodanie **wszystkich** zmian (nowe pliki, zmienione pliki, usunięte pliki) do stage
+
+```
+git add .
+```
+
+kropeczka określa że dodajemy **wszystkie** zmiany do stage
+
+Commitowanie
+
+```
+git commit -m 'treść commit messaga'
+```
+
+pomiędzy cudzysłowiami umieszczamy dowolne zdanie np określające co zostało zrobione w danym commicie
