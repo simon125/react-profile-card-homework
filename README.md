@@ -82,7 +82,7 @@ No dobrze jeszcze parę hintów ode mnie:
 - nie działa projekt mimo ze jest uruchomiony? spróbuj coś zmienić w projekcie (dodaj spacje) i ponownie zapisać,
   ponowne przeładowanie projektu czasem pomaga przebudować projekt i wyeliminować nieprawdziwe błędy
 - dalej nic? sprawdź dokładnie co na ten temat mówi terminal w VSCode czytanie błędów i errorów to bardzo ważna umiejętnośc - postaraj się rozszyforwać i rozwiązać błąd na własną ręke.
-- dalej nic? przekopiuj kawałek błedu i spróbuj znaleźć odpowiedź w googlu - wyszukiwanie informacje to chlep powszedni programisty
+- dalej nic? przekopiuj kawałek błedu i spróbuj znaleźć odpowiedź w googlu - wyszukiwanie informacje to chleb powszedni programisty
 - dalej nic? zadaj pytanie na naszej grupie reactowej może ktoś już miał podobny problem i udało się go rozwiązać - znowu muszę to powiedzieć że zadawanie pytań to też ważna umiejętność :D ps. też jestem na tej grupie - pomogę :)
 
 ## Tworzenie repozytorium na Githubie i pushowanie projektu
